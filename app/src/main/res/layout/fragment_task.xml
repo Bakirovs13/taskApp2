@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.task.TaskFragment"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+   <com.google.android.material.textfield.TextInputLayout
+     app:counterMaxLength="60"
+       app:counterEnabled="true"
+      app:endIconMode="clear_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/image_task"
+           android:src="@drawable/ic_launcher_background"
+           android:layout_gravity="end"
+           android:layout_width="100dp"
+           android:layout_height="100dp"/>
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:hint="Введите задачу"
+
+           android:id="@+id/editText_task"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ProgressBar
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:textColorHint="@color/white"
+        android:hint="SAVE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
